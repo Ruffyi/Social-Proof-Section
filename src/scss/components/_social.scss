@@ -1,0 +1,29 @@
+.social {
+	width: clamp(35rem, 80%, 90rem);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	&__info {
+		@include flex-mother(column);
+		grid-column: 1/2;
+		@include mq(map-get($mq-breakpoints, 'mobile')) {
+			text-align: center;
+		}
+	}
+	&__title {
+		font-size: 4.8rem;
+		color: map-get($clr, 'clr-primary-very-dark-magenta');
+		@include mq(map-get($mq-breakpoints, 'mobile')) {
+			line-height: 1.1;
+		}
+	}
+	&__description {
+		margin-top: 2.5rem;
+		font-size: 1.5rem;
+		color: map-get($clr, 'clr-neutral-dark-grayish-magenta');
+	}
+	@include mq(map-get($mq-breakpoints, 'mobile')) {
+		grid-template-columns: 1fr;
+		margin-top: 5rem;
+	}
+}

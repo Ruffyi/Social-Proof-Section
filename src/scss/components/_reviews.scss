@@ -1,0 +1,32 @@
+.reviews {
+	@include flex-mother(row, center, space-between);
+	grid-column: 1/3;
+	gap: 2rem;
+	margin: 5rem 0;
+	@include mq(map-get($mq-breakpoints, 'mobile')) {
+		flex-direction: column;
+		grid-column: 1;
+	}
+	&__item {
+		padding: 2rem;
+		border-radius: 1rem;
+		background-color: map-get($clr, 'clr-primary-very-dark-magenta');
+		&:nth-child(2) {
+			transform: translateY(2rem);
+		}
+		&:nth-child(3) {
+			transform: translateY(4rem);
+		}
+		@include mq(map-get($mq-breakpoints, 'mobile')) {
+			padding: 5rem 2rem;
+		}
+	}
+	.review__description {
+		line-height: 1.4;
+		color: map-get($clr, 'clr-neutral-light-grayish-magenta');
+		font-weight: 400;
+		@include mq(map-get($mq-breakpoints, 'mobile')) {
+			font-size: 1.5rem;
+		}
+	}
+}

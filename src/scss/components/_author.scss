@@ -1,0 +1,17 @@
+.author {
+	@include flex-mother(row, center, flex-start);
+	margin-bottom: 2rem;
+	&__image {
+		width: 4rem;
+		border-radius: 50%;
+	}
+	&__personal {
+		margin-left: 2rem;
+	}
+	&__name {
+		color: map-get($clr, 'clr-neutral-light-grayish-magenta');
+	}
+	&__status {
+		color: map-get($clr, 'clr-primary-soft-pink');
+	}
+}

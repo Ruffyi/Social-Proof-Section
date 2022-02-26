@@ -1,5 +1,4 @@
 $ff-primary: 'Spartan', sans-serif;
-$fs-primary: 62.5%;
 
 $clr: (
 	'clr-primary-very-dark-magenta': #502050,
@@ -7,4 +6,15 @@ $clr: (
 	'clr-neutral-dark-grayish-magenta': #937b92,
 	'clr-neutral-light-grayish-magenta': #f7f2f7,
 	'clr-neutral-white': #ffffff,
+);
+
+$mq-breakpoints: (
+	'desktop': 56.25rem,
+	'mobile': 42.25rem,
+);
+
+$fs-breakpoints: (
+	'10': 62.5%,
+	'9': 56.25%,
+	'8': 50%,
 );

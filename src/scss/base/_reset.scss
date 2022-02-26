@@ -7,5 +7,13 @@
 }
 
 :root {
+	font-family: $ff-primary;
+	font-size: map-get($fs-breakpoints, '10');
 	box-sizing: border-box;
+	@include mq(map-get($mq-breakpoints, 'desktop')) {
+		font-size: map-get($fs-breakpoints, '9');
+	}
+	@include mq(map-get($mq-breakpoints, 'mobile')) {
+		font-size: map-get($fs-breakpoints, '8');
+	}
 }

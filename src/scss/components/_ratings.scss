@@ -1,0 +1,35 @@
+.ratings {
+	@include flex-mother(column);
+	&__item {
+		@include flex-mother();
+		width: 100%;
+		height: 50px;
+		margin: 2rem 0;
+		background-color: map-get($clr, 'clr-neutral-light-grayish-magenta');
+		@include mq(676px) {
+			flex-direction: column;
+		}
+		&:nth-child(2) {
+			transform: translateX(5rem);
+			@include mq(map-get($mq-breakpoints, 'mobile')) {
+				transform: translateX(0);
+			}
+		}
+		&:nth-child(3) {
+			transform: translateX(10rem);
+			@include mq(map-get($mq-breakpoints, 'mobile')) {
+				transform: translateX(0);
+			}
+		}
+	}
+	&__star {
+		margin: 0 0.3rem;
+	}
+	&__title {
+		color: map-get($clr, 'clr-primary-very-dark-magenta');
+		margin-left: 2rem;
+		@include mq(map-get($mq-breakpoints, 'mobile')) {
+			margin-top: 1rem;
+		}
+	}
+}

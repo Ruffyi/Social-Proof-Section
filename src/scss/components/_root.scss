@@ -1,8 +1,7 @@
 .root {
 	@include flex-mother();
 	min-height: 100vh;
-	position: relative;
-	overflow: hidden;
+	overflow-x: hidden;
 	&__bg {
 		width: clamp(40rem, 55%, 75rem);
 	}
