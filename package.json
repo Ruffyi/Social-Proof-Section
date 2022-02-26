@@ -1,0 +1,16 @@
+{
+	"name": "rp",
+	"version": "1.0.0",
+	"description": "![Design preview for the Social proof section coding challenge](./design/desktop-preview.jpg)",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start:sass": "node-sass ./src/scss/style.scss ./src/dist/css/style.css -w"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"node-sass": "^7.0.1"
+	}
+}
