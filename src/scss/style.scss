@@ -1,3 +1,4 @@
-body {
-	background-color: red;
-}
+@import './abstracts/variables';
+@import './abstracts/mixins';
+@import './base/reset';
+@import './components/root';

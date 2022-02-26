@@ -1,0 +1,15 @@
+.root {
+	@include flex-mother();
+	min-height: 100vh;
+	position: relative;
+	overflow: hidden;
+	&__bg {
+		width: clamp(40rem, 55%, 75rem);
+	}
+	&__bg--top {
+		@include positioning();
+	}
+	&__bg--bottom {
+		@include positioning(absolute, 0, 0, true);
+	}
+}

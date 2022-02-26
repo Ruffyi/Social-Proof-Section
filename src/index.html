@@ -9,8 +9,41 @@
 			sizes="32x32"
 			href="./images/favicon-32x32.png"
 		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="./dist/css/style.css" />
 		<title>Frontend Mentor | Social proof section</title>
 	</head>
-	<body></body>
+	<body>
+		<main class="root">
+			<picture>
+				<source
+					srcset="./assets/images/bg-pattern-top-desktop.svg"
+					media="(min-width:687px)"
+				/>
+				<img
+					src="./assets/images/bg-pattern-top-mobile.svg"
+					alt=""
+					class="root__bg root__bg--top"
+					aria-hidden="true"
+				/>
+			</picture>
+			<picture>
+				<source
+					srcset="./assets/images/bg-pattern-bottom-desktop.svg"
+					media="(min-width:687px)"
+				/>
+				<img
+					src="./assets/images/bg-pattern-bottom-desktop.svg"
+					alt=""
+					class="root__bg root__bg--bottom"
+					aria-hidden="true"
+				/>
+			</picture>
+		</main>
+	</body>
 </html>

@@ -1,0 +1,26 @@
+@mixin flex-mother($dir: row, $alignItems: center, $justifyContent: center) {
+	display: flex;
+	flex-direction: $dir;
+	align-items: $alignItems;
+	justify-content: $justifyContent;
+}
+
+@mixin positioning($pos: absolute, $top: 0, $left: 0, $invert: false) {
+	@if ($invert == false) {
+		position: $pos;
+		top: $top;
+		left: $left;
+	}
+
+	@if ($invert) {
+		position: $pos;
+		bottom: $top;
+		right: $left;
+	}
+}
+
+@mixin mq($mq) {
+	@media (max-width: $mq) {
+		@content;
+	}
+}

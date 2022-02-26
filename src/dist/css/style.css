@@ -1,2 +1,28 @@
-body {
-  background-color: red; }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+:root {
+  box-sizing: border-box; }
+
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden; }
+  .root__bg {
+    width: clamp(40rem, 55%, 75rem); }
+  .root__bg--top {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .root__bg--bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
